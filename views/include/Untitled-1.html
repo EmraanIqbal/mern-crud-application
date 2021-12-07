@@ -10,3 +10,13 @@
 
 <!-- data-id=<%= users[i]._id%>  -->
 <!-- <%- include('include/_show') %> -->
+
+<% users.map(item, key => (
+<tr>
+  <td><%= item.id %></td>
+  <td><%= item.name %></td>
+  <td><%= item.email %></td>
+  <td><%= item.gender %></td>
+  <td><%= item.status %></td>
+</tr>
+))%>
